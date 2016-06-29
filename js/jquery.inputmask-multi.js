@@ -291,7 +291,7 @@
                     }
                     var chr = text.charAt(pos);
                     text = text.substring(0, pos) + text.substring(pos+1);
-                } while (pos>0 && pos<text.length && chr != this.inputmasks.placeholder && !maskOpts.match.test(chr));
+                } while (pos>0 && pos<text.length &&  !maskOpts.match.test(chr));
             } else {
                 text = text.substring(0, caretPos.begin) + text.substring(caretPos.end);
             }
